@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Biodata</title>
+    <style>
+        body {
+            background-color: rgb(248, 177, 177);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2 {
+            color: #333;
+            font-family: 'Georgia', serif;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        button {
+            background: linear-gradient(to right, #ff8a5c, #ff2e63);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        button:hover {
+            background: linear-gradient(to right, #ff2e63, #ff8a5c);
+            transform: scale(1.1);
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .container .image img {
+            border: 5px solid #ddd;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            max-height: 300px;
+        }
+
+        .container .image img:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .container .text {
+            padding-left: 20px;
+            font-size: 18px;
+        }
+
+        .hobbies, .foods, .drinks {
+            margin: 20px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            max-width: 800px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        a {
+            display: block;
+            text-align: center;
+            margin: 20px 0;
+            color: #333;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        a:hover {
+            color: #ff2e63;
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+        <button onclick="document.location = 'home.html'">Home</button>
+        <button onclick="document.location = 'biodata.html'">Biodata</button>
+        <button onclick="document.location = 'new_gallery.html'">Gallery</button>
+        <button onclick="document.location = 'education.html'">Education</button>
+        <button onclick="document.location = 'closet.html'">Closet</button>
+        <button onclick="document.location = 'contact.html'">Contact</button>
+
+    <div class="content">
+        <h1>A Little Introduction About Me :)</h1>
+        <h2>My name is Siti Nursyafiqa, or you can just call me Syafiqa!</h2>
+        <p style="text-align: justify; font-size: 18px;">
+            My full name is <strong style="color: purple; font-style: italic;">Siti Nursyafiqa Binti Shamsul Noraffandi</strong>.<br>
+            As the eldest of four siblings, I’ve always had a strong sense of responsibility. Growing up in Klang, Selangor, I learned early on the importance of independence. Currently pursuing a diploma in information management, I'm driven by the desire to support myself without putting extra pressure on my parents.
+        </p>
+
+        <div class="hobbies">
+            <h2>My Hobbies &#127919;</h2>
+            <p style="text-align: center; font-size: 18px;">
+                My hobbies include playing games like PUBG and Mobile Legends. These games not only help me relax but also improve my focus and communication skills.
+            </p>
+            <div class="container">
+                <div class="image">
+                    <img src="images/pubg.png" alt="PUBG">
+                </div>
+                <div class="image">
+                    <img src="images/mobile legend.png" alt="Mobile Legends">
+                </div>
+            </div>
+        </div>
+
+        <div class="foods">
+            <h2>My Favourite Foods &#127869;</h2>
+            <div class="container">
+                <div class="image">
+                    <img src="images/ayam merah.png" alt="Ayam Masak Merah">
+                </div>
+                <div class="text">
+                    <h3>Ayam Masak Merah</h3>
+                </div>
+            </div>
+            <div class="container">
+                <div class="image">
+                    <img src="images/aglio olio.png" alt="Spaghetti Aglio Olio">
+                </div>
+                <div class="text">
+                    <h3>Spaghetti Aglio Olio</h3>
+                </div>
+            </div>
+            <div class="container">
+                <div class="image">
+                    <img src="images/chocolate cake.png" alt="Chocolate Cake">
+                </div>
+                <div class="text">
+                    <h3>Chocolate Cake</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="drinks">
+            <h2>My Favourite Drinks &#127865;</h2>
+            <div class="container">
+                <div class="image">
+                    <img src="images/chocolate milkshake.png" alt="Chocolate Milkshake">
+                </div>
+                <div class="text">
+                    <h3>Chocolate Milkshake</h3>
+                </div>
+            </div>
+            <div class="container">
+                <div class="image">
+                    <img src="images/watermelon juice.jpg" alt="Watermelon Juice">
+                </div>
+                <div class="text">
+                    <h3>Watermelon Juice</h3>
+                </div>
+            </div>
+        </div>
+
+        <a href="#top">Back to top</a>
+    </div>
+
+    <footer>
+         SNSSN2024 | Last updated: December 2024
+    </footer>
+</body>
+</html>
