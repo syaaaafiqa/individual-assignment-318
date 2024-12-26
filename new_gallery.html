@@ -1,0 +1,255 @@
+
+<html>
+<head>
+    <title>Gallery</title>
+    <meta charset="utf-8">
+    <style>
+
+        body {
+            #background-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        }
+
+        h1, h2 {
+            color: #333;
+            font-family: 'Georgia', serif, center;
+        }
+
+        button {
+            background: linear-gradient(to right, #ff8a5c, #ff2e63);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        button:hover {
+            background: linear-gradient(to right, #ff2e63, #ff8a5c);
+            transform: scale(1.1);
+            transition: 0.3s;
+        }
+
+        img {
+            border: 5px solid #ddd;
+            border-radius: 10px;
+            margin: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .gallery-section {
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 800px;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+
+        }
+
+        a {
+            color: #ff2e63;
+            text-decoration: none;
+            font-size: 14px;
+            margin: 20px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <video id="background-video" autoplay muted loop>
+        <source src="video/move.mp4" type="video/mp4">
+    </video>
+    
+    <div>
+        <button onclick="document.location = 'home.html'" target="_blank">Home</button>
+        <button onclick="document.location = 'biodata.html'" target="_blank">Biodata</button>
+        <button onclick="document.location = 'new_gallery.html'" target="_blank">Gallery</button>
+        <button onclick="document.location = 'education.html'" target="_blank">Education</button>
+        <button onclick="document.location = 'closet.html'" target="blank">Closet</button>
+        <button onclick="document.location = 'contact.html'" target="_blank">Contact</button>
+    </div>
+
+    <div class="gallery-section">
+        <h1>- My Gallery &#127801; -</h1>
+        </p>
+        <p>
+            note: You can click on the picture to make it bigger
+        </p>
+    </div>
+    <hr>
+
+    <div class="gallery-section">
+        <h2>Pictures of Me &#128516;</h2>
+        <a href="images/me 1 (2).png" target="_blank">
+            <img src="images/me 1 (2).png" height="300" alt="Picture of Me 1">
+        </a>
+        <p>
+        <a href="images/picture 2.jpg" target="_blank">
+            <img src="images/picture 2.jpg" height="300" alt="Another Picture of Me 2">
+        </a>
+        </p>
+        <a href="images/me 2.jpg" target="_blank">
+            <img src="images/me 2.jpg" height="300" alt="Another Picture of Me 3">
+        </a>
+        <p>
+            <video width="220" height="410" controls>
+                <source src="video/vid 1.MOV" type="video/mp4">
+                <source src="video/vid 1.MOV" type="video/ogg">
+        </p>
+    </div>
+    <hr>
+
+    <div class="gallery-section">
+        <h2>Pictures of My Family &#128106;</h2>
+        <a href="images/image 4.jpg" target="_blank">
+            <img src="images/image 4.jpg" height="300" alt="Family Picture 1">
+        </a>
+        <a href="images/family 1.jpg" target="_blank">
+            <img src="images/family 1.jpg" height="300" alt="Another Family Picture 2">
+        </a>
+    </div>
+    <hr>
+
+    <div class="gallery-section">
+        <h2>Pictures of My Friends &#127979;</h2>
+        <a href="images/friends 2.jpg" target="_blank">
+            <img src="images/friends 2.jpg" height="400" alt="Another Picture with Friends 1">
+        </a>
+        <a href="images/friends 3.jpg" target="_blank">
+            <img src="images/friends 3.jpg" height="300" alt="Another Picture with Friends 2">
+        </a>
+        <a href="images/friends 4.jpg" target="_blank">
+            <img src="images/friends 4.jpg" height="400" alt="Another Picture with Friends 3">
+        </a>
+        <video width="400" height="250" controls>
+            <source src="video/vid 3.MOV" type="video/mp4">
+            <source src="video/vid 3.MOV" type="video/ogg">
+    </div>
+    <hr>
+
+  
+    <div class="gallery-section">
+        <h2>MP3 Songs :></h2>
+        <p>Malay Songs:</p>
+        <p>
+            Igauan Malam by <font color="purple"><em>Insomniacks:</em></font>
+        </p>
+        <p>
+            <audio controls autoplay>
+                <source src="audio/Insomniacks - Igauan Malam (Official Lyric Video).mp3" type="audio/ogg">
+                <source src="audio/Insomniacks - Igauan Malam (Official Lyric Video).mp3" type="audio/mp3">
+            </audio>
+        </p>
+        <p>
+            Janji by <font color="purple"><em>Aziz Harun:</em></font>
+        </p>
+        <p>
+            <audio controls autoplay>
+                <source src="audio/Janji - Aziz Harun (Official Music Video).mp3" type="audio/ogg">
+                <source src="audio/Janji - Aziz Harun (Official Music Video).mp3" type="audio/mp3">
+            </audio>
+        </p>
+        <p>
+            Rahsia Tuhan by <font color="purple"><em>Noh Salleh:</em></font>
+        </p>
+        <p>
+            <audio controls autoplay>
+                <source src="audio/NOH SALLEH - RAHSIA TUHAN.mp3" type="audio/ogg">
+                <source src="audio/NOH SALLEH - RAHSIA TUHAN.mp3" type="audio/mp3">
+            </audio>
+        </p>
+
+        <p>
+            English Songs:
+        </p>
+        <p>
+            Enchanted by <font color="blue">Taylor Swift:</em></font>
+        </p>
+        <p>
+            <audio controls autoplay>
+                <source src="audio/Taylor Swift - Enchanted (Taylor's Version) (Lyric Video).mp3" type="audio/ogg">
+                <source src="audio/Taylor Swift - Enchanted (Taylor's Version) (Lyric Video).mp3" type="audio/mp3">
+            </audio>
+        </p>
+        <p>
+            Drunk Text by <font color="blue"><em>Henry Moodie:</em></font>
+        </p>
+        <p>
+            <audio controls autoplay>
+                <source src="audio/Henry Moodie - drunk text (official video).mp3" type="audio/ogg">
+                <source src="audio/Henry Moodie - drunk text (official video).mp3" type="audio/mp3">
+            </audio>
+        </p>
+        <p>
+            Die With A Smile by <font color="blue"><em>Lady Gaga & Bruno Mars:</em></font>
+        </p>
+        <p>
+            <audio controls autoplay>
+                <source src="audio/Lady Gaga, Bruno Mars - Die With A Smile (Official Music Video).mp3" type="audio/ogg">
+                <source src="audio/Lady Gaga, Bruno Mars - Die With A Smile (Official Music Video).mp3" type="audio/mp3">
+            </audio>
+        </p>
+    </div>
+
+    <div class="gallery-section">
+        <h2>Youtube Videos :></h2>
+            <p align="center">
+                <iframe width="420" height="240" src="https://www.youtube.com/embed/pCC-IruKvvk"></iframe>
+            </p> 
+            <div style="text-align: justify;">
+            <p>
+                One of my favorite YouTubers is Shazz Zainuddin! She’s always sharing fun and relatable vlogs about her life, 
+                and her online family is massive—over 158,000 followers on Instagram and a whopping 167,900+ on TikTok. 
+                She’s such a vibe!
+            </p>
+            </div>
+
+            <p align="center">
+                <iframe width="420" height="240" src="https://www.youtube.com/embed/O3By-APA5ic?si=p9WLWyCasG26eJ-d"
+                title="YouTube video player"></iframe>
+            </p> 
+            <div style="text-align: justify;">
+            <p>
+                Muhsin Yusni is a foodie at heart! His food reviews are next-level, blending honest opinions with a sprinkle of 
+                humor that keeps his audience entertained. Whether he’s trying out street food gems, trendy café dishes, or local 
+                delicacies, he never holds back on sharing the real tea about the taste, presentation, and value. His expressive 
+                reactions and witty commentary make every review a fun and mouthwatering experience!
+            </p>
+            </div>
+    
+    <div style="text-align: center; margin-top: 20px;">
+        <a href="#top">Back to Top</a>
+    </div>
+
+    </div class="gallery-section">
+    <footer>
+        SNSSN2024 | Last updated: December 2024
+    </footer>
+</body>
+</html>
